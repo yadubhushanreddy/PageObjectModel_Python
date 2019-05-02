@@ -5,7 +5,7 @@ class TestLogin:
 
     def test_profile_update(self):
         self.bp.close_unwanted_browsers()
-        self.lp.login_to_naukri("yallatipalli@gmail.com", "Bharathi@30")
+        self.lp.login_to_naukri(self.username, self.password)
         assert self.lp.verify_page_title("Home | Mynaukri")
         self.hp.navigate_to_profile()
         self.hp.edit_skills_and_save()
