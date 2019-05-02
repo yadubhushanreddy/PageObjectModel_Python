@@ -6,3 +6,7 @@ Below are the modules required to run the project
 1) Selenium
 2) Pytest
 3) Logging
+
+How to run the project:
+------------------------
+pytest -s --username "username" --password "password"
